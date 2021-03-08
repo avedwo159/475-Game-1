@@ -12761,9 +12761,9 @@ MonoBehaviour:
   player: {fileID: 49202747}
   blackHole: {fileID: 1423904148}
   text: {fileID: 370263654}
+  timer: {fileID: 1126364614}
   streak: 0
   Scoreboard: {fileID: 0}
-  checkDead: 0
 --- !u!4 &1351635931
 Transform:
   m_ObjectHideFlags: 0

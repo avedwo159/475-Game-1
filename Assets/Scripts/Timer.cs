@@ -13,7 +13,7 @@ public class Timer : MonoBehaviour
 
     private int finishes = 0;
     private int checkFinishes = 1;
-    private float bestTime = 9999f;
+    private float bestTime = 0.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -29,7 +29,7 @@ public class Timer : MonoBehaviour
 
         if (finishes == checkFinishes)
         {
-            if (time < bestTime)
+            if (time < bestTime || bestTime == 0.0f)
             {
                 bestTime = time;
             }
@@ -38,15 +38,8 @@ public class Timer : MonoBehaviour
             checkFinishes++;
         }
 
-        if (gameManager.checkDead == true)
-        {
-            finishes = 0;
-            checkFinishes = 1;
-            time = 0.0f;
-        }
 
         timer.text = "Timer: " + time.ToString() + "\nBest Time: " + bestTime.ToString() + "\nStreak: " + finishes.ToString();
 
-        //some new code here or whatever
     }
 }

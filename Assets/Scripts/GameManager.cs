@@ -8,9 +8,9 @@ public class GameManager : MonoBehaviour
 	public GameObject player;
 	public GameObject blackHole;
 	public GameObject text;
+	public GameObject timer;
 	public int streak;
 	public GameObject Scoreboard;
-	public bool checkDead = false;
 
 	// Use this for initialization
 	void Start ()
@@ -36,7 +36,6 @@ public class GameManager : MonoBehaviour
 		player.transform.position = spawnPoint.position;
 		blackHole.transform.localScale = new Vector3(0, 0, 0);
 
-		checkDead = false;
 	}
 
 
@@ -50,7 +49,7 @@ public class GameManager : MonoBehaviour
 		player.GetComponent<PlayerInput>().speedCap += 0.1f;
 		player.GetComponent<PlayerInput>().speedMod += 0.1f;
 		player.GetComponent<PlayerInput>().speedDrag += 0.1f;
-		Invoke("DeactivateText", 10.0f);
+		Invoke("DeactivateText", 2.0f);
 	}
 
 	public void Dead()
@@ -63,7 +62,7 @@ public class GameManager : MonoBehaviour
 
 		streak = 0;
 
-		checkDead = true;
+		timer.GetComponent<Timer>().time = 0.0f;
 
 		PositionPlayer();
 	}
