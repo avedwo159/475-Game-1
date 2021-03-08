@@ -47,6 +47,6 @@ public class Timer : MonoBehaviour
 
         timer.text = "Timer: " + time.ToString() + "\nBest Time: " + bestTime.ToString() + "\nStreak: " + finishes.ToString();
 
-
+        //some new code here or whatever
     }
 }
