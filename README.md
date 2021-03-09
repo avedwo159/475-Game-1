@@ -6,4 +6,4 @@ Then just run the map.exe within this folder to play!
 Controls:
 A - Move Left  |  D - Move Right  |  Space - Jump / Double Jump
 
-https://drive.google.com/drive/folders/18O8saVi-m5lJoUMF9PrH4c2wvIZShvGj?usp=sharing
+https://drive.google.com/file/d/1Ntep-oig6KfREVmiq-vk7rElAREt6j1Q/view?usp=sharing
