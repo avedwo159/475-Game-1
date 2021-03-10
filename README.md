@@ -1,6 +1,6 @@
 # 475-Game-1
  
-Spaghetiification by Avery Dworek, Luke Williams, and Travis Zehring
+Spaghettification by Avery Dworek, Luke Williams, and Travis Zehring
 
 Please go to the google drive link below and download the "Spaghettification" folder.
 Then just run the map.exe within this folder to play!
